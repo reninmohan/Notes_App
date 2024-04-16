@@ -1,0 +1,31 @@
+1.We cannot store textarea content in localStorage
+2.Difference between input text and textarea is that input text is single line whereas textarea is multi-line
+3.Instead use p or div with contentEditable attribute true,
+4.max-width -- maximum width an element meaning even if the container has max-width it will only occupy space as per content within it as where width:100% will expand the container width with whitespace.
+5.use row-gap and column-gap instead of gap which is depricated.
+6.Use overflow:hidden if text inside div is flowing out.
+7.use element.firstChild to retrieve the first child of a container, then use container.insertBefore(newElement, firstChild)
+to insert element as first child.
+8.Use event.target.closest(".note") to find the closest element having .note as classname.
+9.use node.remove() to remove particular child node from parent element.
+10.resize:none to prevent resize of text area elements.
+11.difference between
+	document.getElementByClassName --- returns a live html dom collection of elements having matching classname.
+								   if no element matches it returns empty HTML collection
+
+	document.getElementById - returns a single element, because there should unique id in html document
+
+	document.querySelector - returns nodeList needs to specify . for classname and # forId
+						if no element matches it returns null
+
+	document.querySelector- returns the 1st element that matches the css and it returns the only 1 element even if the are multiple elements
+	if no element matches it returns empty nodeList.
+
+12.onkeyup event
+
+13.document.addEventListener('keydown', event=>{
+    if(event.key ==="Enter"){
+        document.execCommand("insertLineBreak")// manually executing insertLineBreak
+        event.preventDefault() //prevent default action of the Enter Key
+    }
+})
