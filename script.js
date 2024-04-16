@@ -30,6 +30,9 @@ function handleEvent(event){
     }
 }
 
+
+
+
 createButton.addEventListener('click', createNote)
 notesContainer.addEventListener('click', handleEvent);
 
