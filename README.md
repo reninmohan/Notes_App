@@ -2,6 +2,8 @@
 
 This is a simple web-based notes application where you can create, edit, and delete notes. The application uses HTML, CSS, and JavaScript for the frontend, and localStorage for storing notes locally in the browser.
 
+Site is live at https://reninmohan.github.io/Notes_App/
+
 ## Preview
 
 ![Notes Application Preview](./assets/Notes_app_screenshot.png)
